@@ -1,0 +1,116 @@
+
+
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset='utf-8'>
+		<style type="text/css">
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			.wrapper {
+				width: 100%;
+				min-width: 600px;
+				max-width: 1000px;
+				min-height: 30px;
+				margin: 100px auto;
+				padding: 80px 20px;
+			}
+			.slogan {
+				display: none;
+				margin: auto;
+				font-size: 0;
+				text-transform: uppercase;
+			}
+			.slogan__word {
+				font-size: 24px;
+				display: inline-block;
+				width: 33.3%;
+				text-align: center;
+				opacity: 0;
+			}
+			.gray {
+				color: #686161;
+			}
+			.blue {
+				color: #5dbfe4;
+			}
+			.green {
+				color: #7bcba0;
+			}
+			.visible {
+				opacity: 1;
+			}
+			.logo {
+				display: none;
+				position: relative;
+				width: 108px;
+				bottom: 40px;
+				margin: 0 auto;
+			}
+			.logo__el {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+		</style>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	</head>
+	<body>
+		<div class='wrapper'>
+			<div class='slogan'>
+				<span class='slogan__word blue'>качество</span>
+				<span class='slogan__word gray'>надежность</span>
+				<span class='slogan__word green'>дизайн</span>
+			</div>
+			<div class='logo'>
+				<img class='logo__el logo__el_green' src='./img/logo_green.png'>
+				<img class='logo__el logo__el_gray' src='./img/logo_gray.png'>
+				<img class='logo__el logo__el_blue' src='./img/logo_blue.png'>
+			</div>
+		</div>
+		<script>
+      		$(document).ready(function(){
+      			console.log('hello');
+      			
+      			function showSlogan(callback) {
+      				var time = 0;
+      				$( '.slogan' ).fadeIn('slow');
+      				$( ".slogan__word" ).each(function() {
+        				var self = this;
+  						setTimeout( function(){ 
+  							$( self ).fadeTo('slow', 1); }, time)
+  							time += 600;
+					});
+					setTimeout( function () { 
+  						$( '.slogan' ).fadeOut('slow', 0 , function () {
+  								callback();
+  							});
+  					}, 3000);
+
+      			}
+      			function showLogo(callback) {
+  					time = 0;
+  					$( '.logo' ).fadeIn('slow');
+  					$( '.logo__el' ).each(function() {
+        				var self = this;
+  						setTimeout( function(){ 
+  							$( self ).fadeTo('slow', 1); }, time)
+  							time += 600;
+					});
+					setTimeout( function () { 
+  						$( '.logo' ).fadeOut('slow', 0 , function () {
+  								showSlogan(showLogo);
+  							});
+  					}, 3000);
+				}
+  				showSlogan(showLogo);
+
+      		});
+   		</script>
+	</body>
+</html>
