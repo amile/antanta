@@ -11,13 +11,38 @@
 				margin: 0;
 				padding: 0;
 			}
-			.wrapper {
+			.row {
+				position: relative;
 				width: 100%;
+				min-height: 50px;
+				margin: 0 auto;
+				background: #fff;
+				background-clip: padding-box;
+
+			}
+			.box-shadow {
+				position: absolute;
+				left: 50%;
+				max-width: 1000px;
+				width: 90%;
+				margin: 0 auto;
+				padding-bottom: 50px;
+				border-radius: 100px;
+				box-shadow: rgba(0, 0, 0, .5) 0 0 10px; 
+				transform: translate(-50%, 0);
+			}
+			.box-shadow_top {
+				top: -50px;
+			}
+			.box-shadow_bottom {
+				bottom: -50px;
+			}
+			.wrapper {
 				min-width: 600px;
 				max-width: 1000px;
-				min-height: 30px;
-				margin: 100px auto;
+				min-height: 190px;
 				padding: 80px 20px;
+				overflow: hidden;
 			}
 			.slogan {
 				display: none;
@@ -61,7 +86,11 @@
 		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 	</head>
 	<body>
-		<div class='wrapper'>
+		<section class='row'>
+			
+		</section>
+		<div class='row wrapper'>
+			<div class='box-shadow box-shadow_top'></div>
 			<div class='slogan'>
 				<span class='slogan__word blue'>качество</span>
 				<span class='slogan__word gray'>надежность</span>
@@ -72,7 +101,11 @@
 				<img class='logo__el logo__el_gray' src='./img/logo_gray.png'>
 				<img class='logo__el logo__el_blue' src='./img/logo_blue.png'>
 			</div>
+			<div class='box-shadow box-shadow_bottom'></div>
 		</div>
+		<section class='row'>
+
+		</section>
 		<script>
       		$(document).ready(function(){
       			console.log('hello');
