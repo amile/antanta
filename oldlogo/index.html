@@ -1,0 +1,175 @@
+
+
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=600px, initial-scale=1">
+		<style type="text/css">
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			.row {
+				position: relative;
+				width: 100%;
+				min-height: 50px;
+				margin: 0 auto;
+				background: #fff;
+				background-clip: padding-box;
+			}
+			.box-shadow {
+				position: absolute;
+				left: 50%;
+				max-width: 1000px;
+				width: 90%;
+				margin: 0 auto;
+				padding-bottom: 50px;
+				border-radius: 100px;
+				box-shadow: rgba(0, 0, 0, .5) 0 0 10px; 
+				transform: translate(-50%, 0);
+			}
+			.box-shadow_top {
+				top: -50px;
+			}
+			.box-shadow_bottom {
+				bottom: -50px;
+			}
+			.wrapper {
+				min-width: 600px;
+				max-width: 1000px;
+				min-height: 190px;
+				padding: 80px 20px;
+				overflow: hidden;
+			}
+			.slogan {
+				display: none;
+				margin: auto;
+				font-size: 0;
+				text-transform: uppercase;
+			}
+			.slogan__word {
+				font-size: 24px;
+				display: inline-block;
+				width: 33.3%;
+				text-align: center;
+				opacity: 0;
+			}
+			.gray {
+				color: #686161;
+			}
+			.blue {
+				color: #5dbfe4;
+			}
+			.green {
+				color: #7bcba0;
+			}
+			.visible {
+				opacity: 1;
+			}
+			.logo {
+				display: none;
+				position: relative;
+				width: 108px;
+				bottom: 30px;
+				margin: 0 auto;
+			}
+			.logo__el {
+				position: absolute;
+				width: 100%;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+			@media screen and (max-width: 600px) {
+				.wrapper {
+					min-height: 330px;
+				}
+    			.slogan__word {
+    				width: 100%;
+    				padding: 10px 0;
+    			}
+
+    			.logo {
+    				width: 120px;
+    				bottom: -30px;
+    			}
+  			}
+  			@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (   min--moz-device-pixel-ratio: 2), only screen and (     -o-min-device-pixel-ratio: 2/1) { 
+  				.logo {
+    				width: 150px;
+
+    			}
+				.slogan__word {
+    				
+    				font-size: 30px;
+    			}
+
+			}
+		</style>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	</head>
+	<body>
+		<section class='row'>
+			
+		</section>
+		<div class='row wrapper'>
+			<div class='box-shadow box-shadow_top'></div>
+			<div class='slogan'>
+				<span class='slogan__word blue'>скорость</span>
+				<span class='slogan__word gray'>надежность</span>
+				<span class='slogan__word green'>интеллект</span>
+			</div>
+			<div class='logo'>
+				<img class='logo__el logo__el_green' src='./img/logo_green.png'>
+				<img class='logo__el logo__el_gray' src='./img/logo_gray.png'>
+				<img class='logo__el logo__el_blue' src='./img/logo_blue.png'>
+			</div>
+			<div class='box-shadow box-shadow_bottom'></div>
+		</div>
+		<section class='row'>
+
+		</section>
+		<script>
+      		$(document).ready(function(){
+      			console.log('hello');
+      			
+      			function showSlogan(callback) {
+      				var time = 0;
+      				$( '.slogan' ).fadeIn('slow');
+      				$( ".slogan__word" ).each(function() {
+        				var self = this;
+  						setTimeout( function(){ 
+  							$( self ).fadeTo('slow', 1); }, time)
+  							time += 600;
+					});
+					setTimeout( function () { 
+  						$( '.slogan' ).fadeOut('slow', 0 , function () {
+  								callback();
+  							});
+  					}, 3000);
+
+      			}
+      			function showLogo(callback) {
+  					time = 0;
+  					$( '.logo' ).fadeIn('slow');
+  					$( '.logo__el' ).each(function() {
+        				var self = this;
+  						setTimeout( function(){ 
+  							$( self ).fadeTo('slow', 1); }, time)
+  							time += 800;
+					});
+					setTimeout( function () { 
+  						$( '.logo' ).fadeOut('slow', 0 , function () {
+  								showSlogan(showLogo);
+  							});
+  					}, 3000);
+				}
+  				showSlogan(showLogo);
+
+      		});
+   		</script>
+	</body>
+</html>
