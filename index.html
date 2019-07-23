@@ -50,9 +50,8 @@
 	<body class="page">
 		<header class="header">
 			<div class="container">
-				<div class="logo">
-					<img srcset="./assets/images/logo-sm.png 70w, ./assets/images/logo-md.png 129w" sises="(max-width: 767px) 70px, 129px"
-						src="./assets/images/logo-md.png" class="logo__logo" />
+				<div class="logo"><img srcset="./assets/images/logo-sm.png 70w, ./assets/images/logo-md.png 129w"
+					 sises="(max-width: 767px) 70px, 129px" src="./assets/images/logo-md.png" class="logo__logo" />
 				</div>
 				<ul class="menu header__menu">
 					<li class="menu__item">О нас</li>
@@ -60,40 +59,77 @@
 					<li class="menu__item">Услуги</li>
 					<li class="menu__item">Проекты</li>
 				</ul>
-				<p class="question header__question">Задать вопрос</p>
+				<p class="question header__question"><a href="#contact" class="question__link">
+						Задать вопрос</a></p>
 				<p class="phone header__phone">+7 (495) 512-32-56</p>
 			</div>
 		</header>
+		<section class="slideshow">
+			<div class="slide"><img src="./assets/images/slide-1.png" class="bg-image slide__bg-image" />
+				<div class="filter"></div>
+				<div class="container">
+					<div class="columns">
+						<div class="column is-5-widescreen">
+							<div class="slide__body">
+								<div class="slide__title">Модернизация или замена любого программного обеспечения:
+								</div>
+								<div class="slide__text">Обновление ПО, разработка продуктов, отвечающих самым
+									современным требованиям и условиям ведения бизнеса.</div>
+								<div class="btn advantage__btn slide__btn">Подробнее</div>
+							</div>
+						</div>
+						<div class="column display-none-column_sm-md"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="columns">
+					<div class="column is-5-widescreen slideshow__nav-wrapper">
+						<div class="nav carousel__nav slideshow__carousel-nav">
+							<div class="nav__out nav__out_active slideshow__nav-out_active"><span
+								 class="nav__inner nav__inner_active slideshow__nav-inner slideshow__nav-inner_active"></span>
+							</div>
+							<div class="nav__out slideshow__nav-out"><span
+								 class="nav__inner slideshow__nav-inner"></span></div>
+							<div class="nav__out slideshow__nav-out"><span
+								 class="nav__inner slideshow__nav-inner"></span></div>
+						</div>
+					</div>
+					<div class="column display-none-column_sm-md"></div>
+				</div>
+			</div>
+		</section>
 		<section class="about">
 			<div class="container">
 				<div class="columns">
 					<div class="column about__picture display-none-column_sm">
-						<div class="about__img-wrapper">
-							<img src="./assets/images/about.png" class="about__img">
-						</div>
+						<div class="about__img-wrapper"><img src="./assets/images/about.png" class="about__img"></div>
 					</div>
 					<div class="column about__hero">
 						<div class="about__hero-body">
 							<h2 class="about__title">Антанта — это</h2>
-							<p class="about__text">крупная компания в сфере IT с большим опытом работы и командой квалифицированных специалистов. Наша профессия – комплексные
-								решения для бизнеса, начиная от разработки программного обеспечения до его полноценного внедрения в жизнь. Осуществляем
-								весь цикл работ, включая консультации, обучение персонала, экспертизу, модернизацию программного обеспечения.</p>
+							<p class="about__text">крупная компания в сфере IT с большим опытом работы и командой
+								квалифицированных специалистов. Наша профессия – комплексные решения для бизнеса,
+								начиная от разработки программного обеспечения до его полноценного внедрения в жизнь.
+								Осуществляем весь цикл работ, включая консультации, обучение персонала, экспертизу,
+								модернизацию программного обеспечения.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="automation">
-			<img src="./assets/images/automation.png" class="bg-image">
+		<section class="automation"><img src="./assets/images/automation.png" class="bg-image">
 			<div class="filter"></div>
 			<div class="container">
 				<div class="columns">
 					<div class="column about__hero automation__hero">
 						<div class="about__hero-body automation__hero-body">
 							<h2 class="about__title automation__title">Автоматизация</h2>
-							<p class="about__text automation__text">Где бы ни находился ваш офис, специалисты нашей компании изучат имеющиеся возможности и в самые короткие сроки предложат
-								оптимальные решения в сфере IT, способные сделать бизнес эффективнее, финансовые процессы – прозрачнее. А ваши клиенты
-								будут довольны удобством и быстротой, с какими вы производите обслуживание.</p>
+							<p class="about__text automation__text">Где бы ни находился ваш офис, специалисты нашей
+								компании изучат имеющиеся возможности и в самые короткие сроки предложат оптимальные
+								решения в сфере IT, способные сделать бизнес эффективнее, финансовые процессы –
+								прозрачнее. А ваши клиенты будут довольны удобством и быстротой, с какими вы
+								производите обслуживание.</p>
 						</div>
 					</div>
 					<div class="column display-none-column_sm-md"></div>
@@ -104,38 +140,40 @@
 			<div class="container">
 				<div class="columns flex-flow_column-md">
 					<div class="column">
-						<div class="advantage__hero">
-							<img src="./assets/images/background_advantage.png" class="bg-image advantage__bg-image">
+						<div class="advantage__hero"><img src="./assets/images/background_advantage.png"
+							 class="bg-image advantage__bg-image">
 							<div class="advantage__hero-body">
 								<h2 class="advantage__title">&gt;200</h2>
-								<h3 class="advantage__subtitle advantage__subtitle_sm">Реализованных проектов по высоконагруженным торговым площадкам</h3>
+								<h3 class="advantage__subtitle advantage__subtitle_sm">Реализованных проектов по
+									высоконагруженным торговым площадкам</h3>
 							</div>
 						</div>
 					</div>
 					<div class="column">
 						<div class="advantage__body">
-							<h3 class="advantage__subtitle">Одно из направлений нашей деятельности — создание мощных высоконагруженных торговых площадок, от разработки до отладки
-								и запуска.</h3>
-							<p class="advantage__text">Мы готовы разработать решения любой сложности с учётом индивидуальных особенностей вашего бизнеса и запросов ваших
-								клиентов.</p>
+							<h3 class="advantage__subtitle">Одно из направлений нашей деятельности — создание мощных
+								высоконагруженных торговых площадок, от разработки до отладки и запуска.</h3>
+							<p class="advantage__text">Мы готовы разработать решения любой сложности с учётом
+								индивидуальных особенностей вашего бизнеса и запросов ваших клиентов.</p>
 							<div class="btn btn">оставить заявку</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="credo">
-			<img src="./assets/images/credo.png" class="bg-image">
+		<section class="credo"><img src="./assets/images/credo.png" class="bg-image">
 			<div class="filter"></div>
 			<div class="container">
 				<div class="columns">
 					<div class="column about__hero automation__hero">
 						<div class="about__hero-body credo__hero-body">
 							<h2 class="about__title automation__title credo__title">Наша философия</h2>
-							<p class="about__text automation__text">Информационные технологии сегодня — это мощнейший инструмент развития бизнеса, без них не обходится не одна сфера
-								деловой активности. Чем серьезнее и грамотнее компания использует IT, тем выше её успех и больше её конкурентные
-								преимущества. Современные технологии, непрерывно развиваясь, дают нам в руки бесконечное число вариантов решения
-								задач и поиска оптимальных моделей для повышения эффективности бизнеса и улучшения условий для работающих в нем людей.</p>
+							<p class="about__text automation__text">Информационные технологии сегодня — это мощнейший
+								инструмент развития бизнеса, без них не обходится не одна сфера деловой активности. Чем
+								серьезнее и грамотнее компания использует IT, тем выше её успех и больше её конкурентные
+								преимущества. Современные технологии, непрерывно развиваясь, дают нам в руки бесконечное
+								число вариантов решения задач и поиска оптимальных моделей для повышения эффективности
+								бизнеса и улучшения условий для работающих в нем людей.</p>
 						</div>
 					</div>
 					<div class="column display-none-column_sm-md"></div>
@@ -148,12 +186,12 @@
 				<div class="container-inner services__carousel">
 					<div class="columns flex-flow_row">
 						<div class="column">
-							<div class="service">
-								<img src="./assets/images/service-1.png" class="service__img" />
+							<div class="service"><img src="./assets/images/service-1.png" class="service__img" />
 								<div class="service__body-wrapper">
 									<div class="service__body">
 										<h3 class="service__title">Разработка ПО</h3>
-										<p class="service__text">Любые программные решения для бизнеса. Автоматизируем процессы, увеличим эффективность бизнеса, повысим ваши конкурентные
+										<p class="service__text">Любые программные решения для бизнеса. Автоматизируем
+											процессы, увеличим эффективность бизнеса, повысим ваши конкурентные
 											преимущества.</p>
 										<div class="btn service__btn">Подробнее</div>
 									</div>
@@ -161,12 +199,12 @@
 							</div>
 						</div>
 						<div class="column">
-							<div class="service">
-								<img src="./assets/images/service-1.png" class="service__img" />
+							<div class="service"><img src="./assets/images/service-1.png" class="service__img" />
 								<div class="service__body-wrapper">
 									<div class="service__body">
 										<h3 class="service__title">Разработка ПО</h3>
-										<p class="service__text">Любые программные решения для бизнеса. Автоматизируем процессы, увеличим эффективность бизнеса, повысим ваши конкурентные
+										<p class="service__text">Любые программные решения для бизнеса. Автоматизируем
+											процессы, увеличим эффективность бизнеса, повысим ваши конкурентные
 											преимущества.</p>
 										<div class="btn service__btn">Подробнее</div>
 									</div>
@@ -174,12 +212,12 @@
 							</div>
 						</div>
 						<div class="column">
-							<div class="service">
-								<img src="./assets/images/service-1.png" class="service__img" />
+							<div class="service"><img src="./assets/images/service-1.png" class="service__img" />
 								<div class="service__body-wrapper">
 									<div class="service__body">
 										<h3 class="service__title">Разработка ПО</h3>
-										<p class="service__text">Любые программные решения для бизнеса. Автоматизируем процессы, увеличим эффективность бизнеса, повысим ваши конкурентные
+										<p class="service__text">Любые программные решения для бизнеса. Автоматизируем
+											процессы, увеличим эффективность бизнеса, повысим ваши конкурентные
 											преимущества.</p>
 										<div class="btn service__btn">Подробнее</div>
 									</div>
@@ -188,26 +226,32 @@
 						</div>
 					</div>
 					<div class="nav carousel__nav">
-						<div class="nav__out nav__out_active nav__out_arrow">
-							<span class="nav__inner nav__inner_arrow nav__inner_arrow-left"></span>
-						</div>
-						<div class="nav__out nav__out_active nav__out_arrow">
-							<span class="nav__inner nav__inner_arrow nav__inner_arrow-right"></span>
-						</div>
+						<div class="nav__out nav__out_active nav__out_arrow"><span
+							 class="nav__inner nav__inner_arrow nav__inner_arrow-left"></span></div>
+						<div class="nav__out nav__out_active nav__out_arrow"><span
+							 class="nav__inner nav__inner_arrow nav__inner_arrow-right"></span></div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="projects">
 			<div class="container">
-				<h2 class="services__title principles__title projects__title">Наши проекты</h2>
+				<div class="columns">
+					<div class="column is-3-tablet">
+						<div class="projects__title-wrapper">
+							<div class="projects__title-bg"></div>
+							<h2 class="services__title principles__title projects__title">Наши проекты</h2>
+						</div>
+					</div>
+					<div class="column display-none-column_sm gradient"></div>
+				</div>
 				<div class="projects__carousel">
 					<div class="project">
 						<div class="columns project__columns">
 							<div class="column is-7-desktop">
 								<div class="project__hero-wrapper">
-									<div class="project__hero">
-										<img src="./assets/images/project-1.png" class="bg-image project__bg-image" />
+									<div class="project__hero"><img src="./assets/images/project-1.png"
+										 class="bg-image project__bg-image" />
 										<div class="filter project__filter"></div>
 									</div>
 								</div>
@@ -216,9 +260,10 @@
 								<div class="project__body-wrapper">
 									<div class="project__body">
 										<div class="btn project__btn project__btn_contact">Разработка ПО</div>
-										<h3 class="project__title">Создание интернет-магазина и crm-системы для учета покупок</h3>
-										<p class="project__text">Мы готовы разработать решения любой сложности с учётом индивидуальных особенностей вашего бизнеса и запросов ваших
-											клиентов.</p>
+										<h3 class="project__title">Создание интернет-магазина и crm-системы для учета
+											покупок</h3>
+										<p class="project__text">Мы готовы разработать решения любой сложности с учётом
+											индивидуальных особенностей вашего бизнеса и запросов ваших клиентов.</p>
 										<div class="btn project__btn">Подробнее</div>
 									</div>
 								</div>
@@ -226,15 +271,9 @@
 						</div>
 					</div>
 					<div class="nav carousel__nav projects__carousel-nav">
-						<div class="nav__out nav__out_active">
-							<span class="nav__inner nav__inner_active"></span>
-						</div>
-						<div class="nav__out">
-							<span class="nav__inner"></span>
-						</div>
-						<div class="nav__out">
-							<span class="nav__inner"></span>
-						</div>
+						<div class="nav__out nav__out_active"><span class="nav__inner nav__inner_active"></span></div>
+						<div class="nav__out"><span class="nav__inner"></span></div>
+						<div class="nav__out"><span class="nav__inner"></span></div>
 					</div>
 				</div>
 			</div>
@@ -243,25 +282,52 @@
 			<div class="container">
 				<h2 class="principles__title">Принципы нашей работы</h2>
 				<div class="columns">
-					<div class="column">
-						<span class="principle__icon"></span>
+					<div class="column"><span class="principle__icon"></span>
 						<p class="principle__text">Максимально эффективно решать задачи, поставленные заказчиком</p>
 					</div>
-					<div class="column">
-						<span class="principle__icon"></span>
-						<p class="principle__text">Постоянно развиваться и совершенствоваться в профессиональной сфере</p>
+					<div class="column"><span class="principle__icon"></span>
+						<p class="principle__text">Постоянно развиваться и совершенствоваться в профессиональной сфере
+						</p>
 					</div>
-					<div class="column">
-						<span class="principle__icon"></span>
-						<p class="principle__text">Использовать лучшие современные технические решения в интересах клиента</p>
+					<div class="column"><span class="principle__icon"></span>
+						<p class="principle__text">Использовать лучшие современные технические решения в интересах
+							клиента</p>
 					</div>
-					<div class="column">
-						<span class="principle__icon"></span>
+					<div class="column"><span class="principle__icon"></span>
 						<p class="principle__text">Владеть знаниями во всех сферах IT на экспертном уровне</p>
 					</div>
-					<div class="column">
-						<span class="principle__icon"></span>
+					<div class="column"><span class="principle__icon"></span>
 						<p class="principle__text">Нести полную ответственность за результат нашей работы</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="columns flex-flow_column-md">
+					<div class="column">
+						<div class="contact__body">
+							<h2 class="contact__title">Мы всегда рады новым вызовам!</h2>
+							<p class="contact__text">Оставьте заявку или вопрос в форме или свяжитесь с нами удобным для
+								Вас способом:</p>
+							<div class="contact__items-wrapper">
+								<p class="contact__item contact__item"><span
+									 class="contact__item-icon contact__item-icon_phone"></span>+7 (495) 512-32-56</p>
+								<p class="contact__item contact__item"><span
+									 class="contact__item-icon contact__item-icon_email"></span>hello@antanta.com</p>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<form class="form contact__form">
+							<div class="form__bg"><input type="text" name="name" placeholder="Имя"
+								 class="form__input" /><input type="text" name="phone" placeholder="Номер телефона"
+								 class="form__input" /><input type="text" name="email" placeholder="E-mail"
+								 class="form__input" /><input type="text" name="theme" placeholder="Тема вопроса"
+								 class="form__input" /><textarea name="message" rows="3" placeholder="Сообщение"
+								 class="form__input"></textarea><input type="submit" value="Отправить заявку"
+								 class="btn form__btn" /></div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -270,17 +336,15 @@
 			<div class="container">
 				<div class="columns">
 					<div class="column column-5 column-order_last">
-						<p class="contacts footer__contacts">
-							<span class="footer__contacts-mail">hello@antanta.tech </span>+7 (495) 512-32-56</p>
+						<p class="contacts footer__contacts"><span class="footer__contacts-mail">hello@antanta.tech
+							</span>+7 (495) 512-32-56</p>
 					</div>
 					<div class="column column-2">
-						<div class="logo footer__logo">
-							<img src="./assets/images/logo-white.png" class="logo__logo" />
+						<div class="logo footer__logo"><img src="./assets/images/logo-white.png" class="logo__logo" />
 						</div>
 					</div>
 					<div class="column column-5">
-						<p class="copyright footer__copyright">© Antanta, 2018
-							<br/>Все права защищены</p>
+						<p class="copyright footer__copyright">© Antanta, 2018 <br />Все права защищены</p>
 					</div>
 				</div>
 			</div>
