@@ -54,10 +54,10 @@
 					 sises="(max-width: 767px) 70px, 129px" src="./assets/images/logo-md.png" class="logo__logo" />
 				</div>
 				<ul class="menu header__menu">
-					<li class="menu__item">О нас</li>
-					<li class="menu__item">Философия</li>
-					<li class="menu__item">Услуги</li>
-					<li class="menu__item">Проекты</li>
+					<li class="menu__item"><a href="#about" class="menu__item-link">О нас</a></li>
+					<li class="menu__item"><a href="#credo" class="menu__item-link">Философия</a></li>
+					<li class="menu__item"><a href="#services" class="menu__item-link">Услуги</a></li>
+					<li class="menu__item"><a href="#projects" class="menu__item-link">Проекты</a></li>
 				</ul>
 				<p class="question header__question"><a href="#contact" class="question__link">
 						Задать вопрос</a></p>
@@ -99,7 +99,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section id="about" class="about">
 			<div class="container">
 				<div class="columns">
 					<div class="column about__picture display-none-column_sm">
@@ -144,8 +144,8 @@
 							 class="bg-image advantage__bg-image">
 							<div class="advantage__hero-body">
 								<h2 class="advantage__title">&gt;200</h2>
-								<h3 class="advantage__subtitle advantage__subtitle_sm">Реализованных проектов по
-									высоконагруженным торговым площадкам</h3>
+								<h3 class="advantage__subtitle advantage__subtitle_sm">Реализованных проектов <br>по
+									высоконагруженным торговым площадкам </h3>
 							</div>
 						</div>
 					</div>
@@ -155,13 +155,13 @@
 								высоконагруженных торговых площадок, от разработки до отладки и запуска.</h3>
 							<p class="advantage__text">Мы готовы разработать решения любой сложности с учётом
 								индивидуальных особенностей вашего бизнеса и запросов ваших клиентов.</p>
-							<div class="btn btn">оставить заявку</div>
+							<div class="btn btn">оставить заявку </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="credo"><img src="./assets/images/credo.png" class="bg-image">
+		<section id="credo" class="credo"><img src="./assets/images/credo.png" class="bg-image">
 			<div class="filter"></div>
 			<div class="container">
 				<div class="columns">
@@ -180,7 +180,36 @@
 				</div>
 			</div>
 		</section>
-		<section class="services">
+		<section class="principles">
+			<div class="container">
+				<h2 class="mytitle principles__title">Принципы нашей работы</h2>
+				<div class="columns">
+					<div class="column principle__item"><span class="principle__icon"><span
+							 class="principle__icon-in principle__icon-in_1"></span></span>
+						<p class="principle__text">Максимально эффективно решать задачи, поставленные заказчиком</p>
+					</div>
+					<div class="column principle__item"><span class="principle__icon"><span
+							 class="principle__icon-in principle__icon-in_2"></span></span>
+						<p class="principle__text">Постоянно развиваться и совершенствоваться в профессиональной сфере
+						</p>
+					</div>
+					<div class="column principle__item"><span class="principle__icon"><span
+							 class="principle__icon-in principle__icon-in_3"></span></span>
+						<p class="principle__text">Использовать лучшие современные технические решения в интересах
+							клиента</p>
+					</div>
+					<div class="column principle__item"><span class="principle__icon"><span
+							 class="principle__icon-in principle__icon-in_4"></span></span>
+						<p class="principle__text">Владеть знаниями во всех сферах IT на экспертном уровне</p>
+					</div>
+					<div class="column principle__item"><span class="principle__icon"><span
+							 class="principle__icon-in principle__icon-in_5"></span></span>
+						<p class="principle__text">Нести полную ответственность за результат нашей работы</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services" class="services">
 			<div class="container">
 				<h2 class="services__title principles__title">Наши услуги</h2>
 				<div class="container-inner services__carousel">
@@ -199,26 +228,26 @@
 							</div>
 						</div>
 						<div class="column">
-							<div class="service"><img src="./assets/images/service-1.png" class="service__img" />
+							<div class="service"><img src="./assets/images/service-2.png" class="service__img" />
 								<div class="service__body-wrapper">
 									<div class="service__body">
-										<h3 class="service__title">Разработка ПО</h3>
-										<p class="service__text">Любые программные решения для бизнеса. Автоматизируем
-											процессы, увеличим эффективность бизнеса, повысим ваши конкурентные
-											преимущества.</p>
+										<h3 class="service__title">Модернизация</h3>
+										<p class="service__text">Приведём любое программное обеспечение в соответствие с
+											требованиями текущего момента. Обновление, замена, техническая поддержка на
+											всех этапах внедрения и эксплуатации.</p>
 										<div class="btn service__btn">Подробнее</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="column">
-							<div class="service"><img src="./assets/images/service-1.png" class="service__img" />
+							<div class="service"><img src="./assets/images/service-3.png" class="service__img" />
 								<div class="service__body-wrapper">
 									<div class="service__body">
-										<h3 class="service__title">Разработка ПО</h3>
-										<p class="service__text">Любые программные решения для бизнеса. Автоматизируем
-											процессы, увеличим эффективность бизнеса, повысим ваши конкурентные
-											преимущества.</p>
+										<h3 class="service__title">Интеграция</h3>
+										<p class="service__text">Интеграция различных видов программного обеспечения,
+											координация работы всех систем, обеспечение эффекта синергии от
+											согласованного действия цифровых продуктов.</p>
 										<div class="btn service__btn">Подробнее</div>
 									</div>
 								</div>
@@ -234,7 +263,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="projects">
+		<section id="projects" class="projects">
 			<div class="container">
 				<div class="columns">
 					<div class="column is-3-tablet">
@@ -274,30 +303,6 @@
 						<div class="nav__out nav__out_active"><span class="nav__inner nav__inner_active"></span></div>
 						<div class="nav__out"><span class="nav__inner"></span></div>
 						<div class="nav__out"><span class="nav__inner"></span></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="principles">
-			<div class="container">
-				<h2 class="principles__title">Принципы нашей работы</h2>
-				<div class="columns">
-					<div class="column"><span class="principle__icon"></span>
-						<p class="principle__text">Максимально эффективно решать задачи, поставленные заказчиком</p>
-					</div>
-					<div class="column"><span class="principle__icon"></span>
-						<p class="principle__text">Постоянно развиваться и совершенствоваться в профессиональной сфере
-						</p>
-					</div>
-					<div class="column"><span class="principle__icon"></span>
-						<p class="principle__text">Использовать лучшие современные технические решения в интересах
-							клиента</p>
-					</div>
-					<div class="column"><span class="principle__icon"></span>
-						<p class="principle__text">Владеть знаниями во всех сферах IT на экспертном уровне</p>
-					</div>
-					<div class="column"><span class="principle__icon"></span>
-						<p class="principle__text">Нести полную ответственность за результат нашей работы</p>
 					</div>
 				</div>
 			</div>
