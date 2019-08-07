@@ -135,7 +135,7 @@
 		</section>
 		<section class="about">
 			<div class="container">
-				<div class="columns">
+				<div class="columns flex-flow_md">
 					<div class="column about__picture display-none-column_sm">
 						<div class="about__img-wrapper"><img src="./assets/images/about.jpg" class="about__img"></div>
 					</div>
@@ -177,7 +177,7 @@
 						<div class="advantage__hero"><img src="./assets/images/background_advantage.png"
 							 class="bg-image advantage__bg-image">
 							<div class="advantage__hero-body">
-								<h2 class="advantage__title">&gt;200</h2>
+								<h2 class="advantage__title">&gt;20&nbsp;</h2>
 								<h3 class="advantage__subtitle advantage__subtitle_sm">Реализованных проектов <br>по
 									высоконагруженным торговым площадкам </h3>
 							</div>
@@ -189,7 +189,8 @@
 								высоконагруженных торговых площадок, от разработки до отладки и запуска.</h3>
 							<p class="advantage__text">Мы готовы разработать решения любой сложности с учётом
 								индивидуальных особенностей вашего бизнеса и запросов ваших клиентов.</p>
-							<div class="btn btn">оставить заявку</div>
+							<div class="btn advantage__btn"><a href="#contact" class="advantage__btn-link">оставить
+									заявку</a></div>
 						</div>
 						<div id="credo"></div>
 					</div>
@@ -218,7 +219,7 @@
 		<section class="principles">
 			<div class="container">
 				<h2 class="mytitle principles__title">Принципы нашей работы</h2>
-				<div class="columns">
+				<div class="columns flex-flow_md">
 					<div class="column principle__item"><span class="principle__icon"><span
 							 class="principle__icon-in principle__icon-in_1"></span></span>
 						<p class="principle__text">Максимально эффективно решать задачи, поставленные заказчиком</p>
@@ -247,9 +248,11 @@
 		<section id="services" class="services">
 			<div class="container">
 				<h2 class="services__title principles__title">Наши услуги</h2>
-				<div class="container-inner services__carousel">
-					<div class="columns flex-flow_row">
-						<div class="column">
+			</div>
+			<div class="container services__container">
+				<div class="services__carousel">
+					<div class="services__wrapper_flex transform_none">
+						<div class="services__item_flex">
 							<div class="service"><img src="./assets/images/service-1.jpg" class="service__img" />
 								<div class="service__body-wrapper">
 									<div class="service__body">
@@ -262,7 +265,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="column">
+						<div class="services__item_flex">
 							<div class="service"><img src="./assets/images/service-2.jpg" class="service__img" />
 								<div class="service__body-wrapper">
 									<div class="service__body">
@@ -275,7 +278,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="column">
+						<div class="services__item_flex">
 							<div class="service"><img src="./assets/images/service-3.jpg" class="service__img" />
 								<div class="service__body-wrapper">
 									<div class="service__body">
@@ -288,11 +291,24 @@
 								</div>
 							</div>
 						</div>
-					</div><span id="projects"></span>
+						<div class="services__item_flex previous">
+							<div class="service"><img src="./assets/images/service-4.jpg" class="service__img" />
+								<div class="service__body-wrapper">
+									<div class="service__body">
+										<h3 class="service__title">IT-консалтинг</h3>
+										<p class="service__text">Квалифицированная поддержка, консультирование, обучение
+											для руководства и персонала на всех этапах эксплуатации программных решений.
+										</p>
+										<div class="btn service__btn">Подробнее</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="nav carousel__nav">
-						<div class="nav__out nav__out_active nav__out_arrow"><span
+						<div class="nav__out nav__out_active nav__out_arrow nav_prev"><span
 							 class="nav__inner nav__inner_arrow nav__inner_arrow-left"></span></div>
-						<div class="nav__out nav__out_active nav__out_arrow"><span
+						<div class="nav__out nav__out_active nav__out_arrow nav_next"><span
 							 class="nav__inner nav__inner_arrow nav__inner_arrow-right"></span></div>
 					</div>
 				</div>
@@ -300,7 +316,7 @@
 		</section>
 		<section class="projects">
 			<div class="container">
-				<div class="columns">
+				<div class="columns flex-flow_md">
 					<div class="column is-3-tablet">
 						<div class="projects__title-wrapper">
 							<div class="projects__title-bg"></div>
@@ -311,22 +327,11 @@
 				</div>
 			</div>
 			<div class="container projects__container_carousel">
-				<!-- .projects__carousel.projects__item-wrapper
-	.projects__item
-		+project()
-.nav.carousel__nav.projects__carousel-nav
-	.nav__out.nav__out_active
-		span.nav__inner.nav__inner_active
-	.nav__out
-		span.nav__inner
-	.nav__out
-		span.nav__inner
--->
 				<div class="projects__carousel">
 					<div class="projects__wrapper_flex">
 						<div class="projects__item_flex">
 							<div class="project">
-								<div class="columns project__columns">
+								<div class="columns project__columns flex-flow_md">
 									<div class="column is-7-desktop">
 										<div class="project__hero-wrapper">
 											<div class="project__hero"><span class="index">1</span><img
@@ -354,7 +359,7 @@
 						</div>
 						<div class="projects__item_flex">
 							<div class="project">
-								<div class="columns project__columns">
+								<div class="columns project__columns flex-flow_md">
 									<div class="column is-7-desktop">
 										<div class="project__hero-wrapper">
 											<div class="project__hero"><span class="index">2</span><img
@@ -382,7 +387,7 @@
 						</div>
 						<div class="projects__item_flex">
 							<div class="project">
-								<div class="columns project__columns">
+								<div class="columns project__columns flex-flow_md">
 									<div class="column is-7-desktop">
 										<div class="project__hero-wrapper">
 											<div class="project__hero"><span class="index">3</span><img
@@ -406,7 +411,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div><span id="contact"></span>
 						</div>
 					</div>
 					<div class="nav carousel__nav projects__carousel-nav">
@@ -424,7 +429,7 @@
 						<div class="contact__body">
 							<h2 class="contact__title">Мы всегда рады новым вызовам!</h2>
 							<p class="contact__text">Оставьте заявку или вопрос в форме или свяжитесь с нами удобным для
-								Вас способом:</p>
+								Вас способом: </p>
 							<div class="contact__items-wrapper">
 								<p class="contact__item contact__item"><span
 									 class="contact__item-icon contact__item-icon_phone"></span>+7 (495) 512-32-56</p>
@@ -449,7 +454,7 @@
 		</section>
 		<div class="footer">
 			<div class="container">
-				<div class="columns">
+				<div class="columns flex-flow_md">
 					<div class="column column-5 column-order_last">
 						<p class="contacts footer__contacts"><span
 							 class="footer__contacts-mail">info@antanta.tech</span>+7 (495) 512-32-56</p>
@@ -459,7 +464,7 @@
 						</div>
 					</div>
 					<div class="column column-5">
-						<p class="copyright footer__copyright">© Antanta, 2018 <br />Все права защищены</p>
+						<p class="copyright footer__copyright">© Antanta, 2019 <br />Все права защищены</p>
 					</div>
 				</div>
 			</div>
